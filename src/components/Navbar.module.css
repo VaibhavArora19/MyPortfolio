@@ -1,0 +1,31 @@
+.navbar {
+    display:flex;
+    justify-content: space-between;
+}
+
+.icon {
+    color: #FF9F29;
+}
+
+.title span{
+    font-size: 1.7rem;
+    margin: 1rem;
+    display: inline-block;
+    padding-top: 0.8rem;
+}
+
+.options{
+    margin-top: 1rem;
+    display:flex;
+    justify-content:space-around;
+}
+
+.options div {
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    padding-top: 0.8rem;
+}
+.button{
+    padding-top: 0;
+    margin-top: 0;
+}
