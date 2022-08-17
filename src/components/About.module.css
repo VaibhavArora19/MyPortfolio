@@ -1,0 +1,21 @@
+.aboutSection {
+    margin-left:12rem;
+    font-style: normal;
+    font-family: acumin-pro,sans-serif;
+}
+
+.about{
+    font-size: 3.2rem;
+    border-bottom: 10px solid #FF9F29;
+    width:145px;
+    font-weight: 700;
+    margin-top: 15rem;
+}
+
+.aboutMe {
+    width:50%;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    line-height: 2;
+    font-weight: 100;
+}

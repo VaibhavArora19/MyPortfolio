@@ -8,16 +8,22 @@
 }
 
 .title span{
-    font-size: 1.7rem;
-    margin: 1rem;
+    font-size: 1.9rem;
+    margin-top: 1.5rem;
+    margin-left: 2.2rem;
     display: inline-block;
-    padding-top: 0.8rem;
+    font-family: acumin-pro-wide,sans-serif;
+    font-weight: 550;
+    font-style: normal;
 }
 
 .options{
     margin-top: 1rem;
     display:flex;
     justify-content:space-around;
+    font-family: acumin-pro-wide,sans-serif;
+    font-weight: 550;
+    font-style: normal;
 }
 
 .options div {
@@ -28,4 +34,13 @@
 .button{
     padding-top: 0;
     margin-top: 0;
+    background-color: #FF9F29;
+    cursor:pointer;
+    color: aliceblue;
+    width:6.8rem;
+    height:3.5rem;
+    text-align: center;
+}
+.button:hover{
+    background-color: #FF8D29;
 }

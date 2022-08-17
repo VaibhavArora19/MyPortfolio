@@ -2,10 +2,10 @@ import { useState } from "react";
 import classes from "./Navbar.module.css";
 
 const Navbar = () => {
-  const [isDark, setIsDark] = useState(true);
+  const [isLight, setIsLight] = useState(false);
 
   const darkModeHandler = () => {
-    setIsDark(!isDark);
+    setIsLight(!isLight);
   }
   return (
     <div className={classes.navbar}>
@@ -26,14 +26,15 @@ const Navbar = () => {
           <div>Contact</div>
 
           <div className={classes.button}>
-            <button className="btn btn-primary">Hire me</button>
+            Hire me
           </div>
           <div>
             <button onClick = {darkModeHandler}>
-              {isDark ? (
-                <i className="fa-solid fa-moon fa-2x"></i>
+              {isLight ? (
+                <i className="fa-solid fa-brightness fa-2x"></i>
               ) : (
-                <i class="fa-solid fa-brightness fa-2x"></i>
+               
+                <i className="fa-solid fa-moon fa-2x"></i>
               )}
             </button>
           </div>
