@@ -44,3 +44,12 @@
 .button:hover{
     background-color: #FF8D29;
 }
+
+.options a{
+    cursor: pointer;
+    color: rgb(162 161 166);
+}
+
+.options a:hover{
+    color: white;
+}

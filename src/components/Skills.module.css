@@ -1,0 +1,38 @@
+.skillsSection {
+    margin-left: 11rem;
+    width:80%;
+}
+
+.heading {
+    font-size: 3.2rem;
+    border-bottom: 10px solid #FF9F29;
+    width:128px;
+    font-weight: 700;
+    margin-top: 13rem;
+    margin-bottom: 2.5rem;
+}
+
+.skills {
+    line-height: 2;
+    text-align: center;
+}
+.skills i{
+
+    color: rgb(74, 74, 74);
+}
+
+.skills h3{
+    margin-bottom: 1.4rem;
+    text-align: center;
+    color: rgb(162 161 166);
+    font-family: acumin-pro,sans-serif;
+    font-weight: 500;
+}
+
+.skills img {
+    margin-left:2.40rem;
+    
+}
+.changeColor {
+    filter: invert(24%) sepia(0%) saturate(20%) hue-rotate(244deg) brightness(98%) contrast(79%);
+}

@@ -19,11 +19,11 @@ const Navbar = () => {
       </div>
       <div>
         <div className={classes.options}>
-          <div>Home</div>
-          <div>About</div>
-          <div>Skills</div>
-          <div>My Work</div>
-          <div>Contact</div>
+        <div><a href = "#">Home</a></div>
+        <div><a href = "#">About</a></div>
+        <div><a href = "#">Skills</a></div>
+        <div><a href = "#">My Work</a></div>
+        <div><a href = "#">Contact</a></div>
 
           <div className={classes.button}>
             Hire me

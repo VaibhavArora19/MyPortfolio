@@ -1,9 +1,11 @@
-import classes from './About.module.css';
+import classes from "./About.module.css";
+import profile from "../images/profile.png";
 
 const About = () => {
   return (
-    <div className= {classes.aboutSection}>
+    <div className={classes.aboutSection}>
       <h1 className={classes.about}>About</h1>
+      <img src={profile} className={classes.profile} />
       <p className={classes.aboutMe}>
         Hello, I'm Vaibhav and I'm a Full Stack Web2 and Web3 Developer from
         India. Being curious about how these computers work I started coding at
@@ -22,7 +24,7 @@ const About = () => {
         <br />
         Take a look at my work below to see what I'm working on, and get in
         touch if you'd like to work together!
-      </p>
+      </p> 
     </div>
   );
 };
