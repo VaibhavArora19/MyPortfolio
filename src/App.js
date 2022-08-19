@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Introduction from './components/Introduction';
 import About from './components/About';
 import Skills from './components/Skills';
+import MyWork from './components/MyWork';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
    <Introduction />
    <About />
    <Skills />
+   <MyWork />
    </React.Fragment>
   );
 }
