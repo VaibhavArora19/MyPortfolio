@@ -34,6 +34,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Gavin"
                   className={classes.input}
+                  required
                 />
               </div>
               <div>
@@ -42,6 +43,7 @@ const Contact = () => {
                   className={`${classes.input}`}
                   type="text"
                   placeholder="Belson"
+                  required
                 />
               </div>
             </div>
@@ -52,6 +54,7 @@ const Contact = () => {
                   className={` ${classes.input} ${classes.email}`}
                   type="email"
                   placeholder="vitalik@gmail.com"
+                  required
                 />
               </div>
             </div>

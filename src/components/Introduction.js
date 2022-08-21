@@ -3,6 +3,7 @@ import classes from "./Introduction.module.css";
 import { TypeAnimation } from "react-type-animation";
 
 const Introduction = () => {
+
   return (
     <div className={classes.introduction} id = "IntroductionId">
       <h2 className={classes.heading}>Hello! 👋 My name is</h2>
@@ -24,7 +25,7 @@ const Introduction = () => {
         repeat = {Infinity}
       />
       <h2 className={classes.explaination}>I engineer ecosystems, not just softwares!</h2>
-      <button className={`btn btn-primary ${classes.work}`}>See my work</button>
+      <a href = "#MyWorkId"><button className={`btn btn-primary ${classes.work}`}>See my work</button></a>
     </div>
   );
 };
