@@ -7,7 +7,7 @@ import blockchain from "../images/blockchain.svg";
 
 const Skills = () => {
   return (
-    <div className={classes.skillsSection}>
+    <div className={classes.skillsSection}  id = "SkillsId">
       <h1 className={classes.heading}>Skills</h1>
       <div className={`grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5`}>
         <div className={classes.skills}>

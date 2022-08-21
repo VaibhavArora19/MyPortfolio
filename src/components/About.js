@@ -3,7 +3,7 @@ import profile from "../images/profile.png";
 
 const About = () => {
   return (
-    <div className={classes.aboutSection}>
+    <div className={classes.aboutSection} id = "AboutId">
       <h1 className={classes.about}>About</h1>
       <img src={profile} className={classes.profile} />
       <p className={classes.aboutMe}>

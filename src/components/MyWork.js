@@ -8,7 +8,7 @@ import ToDo from "../images/ToDo.png";
 
 const MyWork = () => {
   return (
-    <div className={classes.myWorkSection}>
+    <div className={classes.myWorkSection} id = "MyWorkId">
       <h1 className={classes.heading}>My Work</h1>
       <div className={`${classes.project} grid grid-cols md:grid-cols-2`}>
         <div>

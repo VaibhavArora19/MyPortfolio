@@ -5,6 +5,8 @@ import Introduction from './components/Introduction';
 import About from './components/About';
 import Skills from './components/Skills';
 import MyWork from './components/MyWork';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
    <About />
    <Skills />
    <MyWork />
+   <Contact />
+   <Footer />
    </React.Fragment>
   );
 }

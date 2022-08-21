@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Introduction = () => {
   return (
-    <div className={classes.introduction}>
+    <div className={classes.introduction} id = "IntroductionId">
       <h2 className={classes.heading}>Hello! 👋 My name is</h2>
       <h1 className={classes.name}>Vaibhav Arora</h1>
       <TypeAnimation
