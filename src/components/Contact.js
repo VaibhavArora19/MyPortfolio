@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import classes from "./Contact.module.css";
 
@@ -6,18 +6,47 @@ import Message from "../images/Message.svg";
 
 const Contact = () => {
   const [isSending, setIsSending] = useState(false);
+  const firstNameRef = useRef();
+  const lastNameRef = useRef();
+  const emailRef = useRef();
+  const messageRef = useRef();
 
-  const formSubmitHandler = (event) => {
+  const formSubmitHandler = async (event) => {
     event.preventDefault();
     setIsSending(true);
 
-    setTimeout(() => {
+    const firstName = firstNameRef.current.value;
+    const lastName = lastNameRef.current.value;
+    const email = emailRef.current.value;
+    const message = messageRef.current.value;
+
+    const contactData = await fetch("http://localhost:8080/postContact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        email,
+        message,
+      }),
+    });
+
+    
+
+    await contactData.json();
+
       setIsSending(false);
-    },2000);
+
+      firstNameRef.current.value = '';
+      lastNameRef.current.value = '';
+      emailRef.current.value = '';
+      messageRef.current.value = '';
   };
 
   return (
-    <div className={classes.contactSection} id = "ContactId">
+    <div className={classes.contactSection} id="ContactId">
       <h1 className={classes.heading}>Contact</h1>
       <p>
         I am currently available to get involved with new projects, so get in
@@ -34,6 +63,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Gavin"
                   className={classes.input}
+                  ref={firstNameRef}
                   required
                 />
               </div>
@@ -43,6 +73,7 @@ const Contact = () => {
                   className={`${classes.input}`}
                   type="text"
                   placeholder="Belson"
+                  ref={lastNameRef}
                   required
                 />
               </div>
@@ -54,6 +85,8 @@ const Contact = () => {
                   className={` ${classes.input} ${classes.email}`}
                   type="email"
                   placeholder="vitalik@gmail.com"
+                  ref={emailRef}
+                  autoComplete = "on"
                   required
                 />
               </div>
@@ -64,6 +97,7 @@ const Contact = () => {
                 <input
                   className={classes.textarea}
                   type="text"
+                  ref={messageRef}
                   placeholder="Say Something nice."
                 />
               </div>
