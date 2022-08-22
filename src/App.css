@@ -1,0 +1,10 @@
+.topDiv{
+    width:fit-content;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+.mobileScreen{
+    zoom: 40%;
+}

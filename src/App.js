@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import './App.css';
+
 import Navbar from './components/Navbar';
 import Introduction from './components/Introduction';
 import About from './components/About';
@@ -8,11 +10,24 @@ import MyWork from './components/MyWork';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ToTop from './components/ToTop';
+import HamburgerNavbar from './components/UI/HamburgerNavbar';
 
 function App() {
   const [showBtn, setShowBtn] = useState(false);
-    
+  const [classes, setIsClasses] = useState('topDiv');
+  const [isNavbarShowing, setIsNavbarShowing] = useState(false);
   useEffect(() => {
+
+    if(window.screen.width < 450){
+      setIsClasses('topDiv mobileScreen');
+    }
+    window.addEventListener('resize', () => {
+      if(window.screen.width < 450){
+        setIsClasses('topDiv mobileScreen');
+      }else{
+        setIsClasses('topDiv');
+      }
+    });
     window.addEventListener('scroll', () => {
         if (window.scrollY > 330) {
             setShowBtn(true);
@@ -21,9 +36,14 @@ function App() {
         }
     });
 }, []);
+
+  const showNavbarHandler = ()  => {
+    setIsNavbarShowing(!isNavbarShowing);
+  };
   return (
-   <React.Fragment>
-   <Navbar />
+   <div className= {classes}>
+   <Navbar showNavbar = {showNavbarHandler}/>
+   {isNavbarShowing && <HamburgerNavbar/>}
    <Introduction />
     {showBtn && <ToTop />}
    <About />
@@ -31,7 +51,7 @@ function App() {
    <MyWork />
    <Contact />
    <Footer />
-   </React.Fragment>
+   </div>
   );
 }
 

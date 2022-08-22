@@ -1,0 +1,26 @@
+.options{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-left: 14%;
+    margin-top: 7%;
+    font-family: acumin-pro-wide,sans-serif;
+    font-weight: 600;
+    animation: navAnimation 0.5s ease-in;
+    overflow-y: hidden;
+    
+}
+
+.options div{
+    margin-bottom: 2%;
+   
+}
+
+
+@keyframes navAnimation {
+    0%{
+        height:20px;
+    }
+    100%{
+        height: 270px; 
+    }
+}

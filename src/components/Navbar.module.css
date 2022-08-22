@@ -57,3 +57,9 @@
 .button a{
     color: white;
 }
+
+@media (max-width:500px){
+.navbar{
+    margin: 3% 4%;
+}
+}
