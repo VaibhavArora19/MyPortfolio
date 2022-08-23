@@ -36,21 +36,22 @@
         margin-left: 0;
     }
     .about{
-        font-size: 5.5rem;
+        font-size: 6.6rem;
         margin: 13rem auto 0;
-        width: 250px;
+        width: 300px;
         
     }
     .profile{
        float:none;
        margin: 11% auto 0;
-       height: 720px;
-       width: 640px;
+       height: 800px;
+       width: 720px;
     }
     .aboutMe{
-        font-size: 2.2rem;
-        margin-left: 20%;
+        font-size: 3.5rem;
         width:60%;
         margin-top: 7%;
+        width: 90%;
+        margin-left: 6%;
     }
 }

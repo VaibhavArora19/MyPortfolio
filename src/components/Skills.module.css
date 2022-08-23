@@ -36,3 +36,30 @@
 .changeColor {
     filter: invert(24%) sepia(0%) saturate(20%) hue-rotate(244deg) brightness(98%) contrast(79%);
 }
+
+@media (max-width:500px){
+    .skillsSection{
+        margin-left: 0;
+        width: 97%;
+    }
+
+    .heading{
+        font-size: 6.6rem;
+        margin:13rem auto 9rem;
+        width:260px;
+    }
+
+    .skills{
+        margin-bottom: 5%;
+
+    }
+
+    .skills h3{
+        font-size: 2.2rem;
+    }
+
+    .grids{
+        margin-left: 4%;
+    }
+
+}

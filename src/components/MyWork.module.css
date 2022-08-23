@@ -91,3 +91,70 @@
     padding-bottom: 5%;
     margin-bottom: 3%;
 }
+
+@media (max-width:500px){
+    .myWorkSection{
+        margin-left: 0;
+        width: 97%;
+    }
+
+    .heading{
+        font-size: 6.6rem;
+        width: 445px;
+        margin: 13rem auto 9rem;
+    }
+
+    .project{
+        margin-left: 10%;
+        width: 85%;
+    }
+    .image{
+        width: 48rem;
+        height:25rem;
+    }
+    .technologies{
+        padding-left: 0;
+    }
+    .technologies h2{
+        font-size: 2rem;
+        text-align: center;
+        margin: 3rem 0;
+    }
+    .technologies h3{
+        font-size: 3.2rem;
+        text-align: center;
+        display: block;
+        margin: 0 auto 4rem;
+        width:45%;
+    }
+
+    .technologies h4{
+        font-size: 1.8rem;
+    }
+    .changeColor{
+        width: 80px;
+        margin-left: 30%;
+    }
+
+    .solidity{
+        margin-left: 30%;
+    }
+    
+
+    .technologies p{
+        font-size: 1.8rem;
+        text-align: center;
+        display: block;
+    }
+
+    .buttons{
+        margin-left:28%;
+        margin-bottom: 3%;
+        margin-top: 4%;
+    }
+
+    .technologies button{
+        width:140px;
+        font-size: 1.2rem;
+    }
+}

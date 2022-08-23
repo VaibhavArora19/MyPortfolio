@@ -22,7 +22,7 @@ const MyWork = () => {
         <div className={classes.technologies}>
           <h2>JUST LAUNCHED</h2>
           <h3>ETHLinked</h3>
-          <div className={`grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5`}>
+          <div className={`grid grid-cols-4 md:grid-cols-4 lg:grid-cols-5`}>
             <span>
               <i className="fa-brands fa-html5 fa-3x"></i>
               <h4>HTML</h4>
@@ -37,7 +37,7 @@ const MyWork = () => {
                 alt="nextjs-icon"
                 className={classes.changeColor}
               />
-              <h4>Next</h4>
+              <h4 className= {classes.nextheading}>Next</h4>
             </span>
             <span>
               <img
@@ -68,7 +68,7 @@ const MyWork = () => {
         <div className={classes.technologies}>
           <h2>Backend & API</h2>
           <h3>Crypto Market</h3>
-          <div className={`grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5`}>
+          <div className={`grid grid-cols-4 md:grid-cols-4 lg:grid-cols-5`}>
             <span>
               <i className="fa-brands fa-html5 fa-3x"></i>
               <h4>HTML</h4>

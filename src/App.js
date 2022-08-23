@@ -16,15 +16,22 @@ function App() {
   const [showBtn, setShowBtn] = useState(false);
   const [classes, setIsClasses] = useState('topDiv');
   const [isNavbarShowing, setIsNavbarShowing] = useState(false);
+  const [isHamburgerShowing, setIsHamburgerShowing] = useState(false);
   useEffect(() => {
 
     if(window.screen.width < 450){
       setIsClasses('topDiv mobileScreen');
+      setIsHamburgerShowing(true);
     }
     window.addEventListener('resize', () => {
       if(window.screen.width < 450){
+
         setIsClasses('topDiv mobileScreen');
+        setIsHamburgerShowing(true);
+
       }else{
+
+        setIsHamburgerShowing(false);
         setIsClasses('topDiv');
       }
     });
@@ -44,7 +51,7 @@ function App() {
    <div className= {classes}>
    <Navbar showNavbar = {showNavbarHandler}/>
    {isNavbarShowing && <HamburgerNavbar/>}
-   <Introduction />
+   <Introduction  mobileView = {isHamburgerShowing}/>
     {showBtn && <ToTop />}
    <About />
    <Skills />
