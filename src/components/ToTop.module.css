@@ -25,3 +25,23 @@
 .top span{
     font-size: 2.2rem;
 }
+
+@media (max-width:600px) {
+    .top{
+        width:110px;
+        height: 110px;
+        left: 935px;
+        border-radius: 80px;
+        top:90%;
+    }
+    .top span{
+        font-size: 4.4rem;
+    }
+}
+
+@media (max-width:400px) {
+       .top{
+        left:860px;
+        top:90%;
+       } 
+}

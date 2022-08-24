@@ -1,5 +1,7 @@
 .hamburger{
     color: white;
-    margin-top: 29px;
+    margin-top: 75px;
     cursor: pointer;
+    width: 50px;
+    margin-right: 40px;
 }

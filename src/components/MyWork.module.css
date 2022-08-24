@@ -95,7 +95,8 @@
 @media (max-width:500px){
     .myWorkSection{
         margin-left: 0;
-        width: 97%;
+        width: 99%;
+        margin-bottom: 13rem;
     }
 
     .heading{
@@ -105,23 +106,24 @@
     }
 
     .project{
-        margin-left: 10%;
-        width: 85%;
+        margin-left: 5%;
+        width: 90%;
     }
     .image{
-        width: 48rem;
-        height:25rem;
+        width: 51rem;
+        height:28rem;
+        margin-left: 4%;
     }
     .technologies{
         padding-left: 0;
     }
     .technologies h2{
-        font-size: 2rem;
+        font-size: 2.7rem;
         text-align: center;
         margin: 3rem 0;
     }
     .technologies h3{
-        font-size: 3.2rem;
+        font-size: 3.5rem;
         text-align: center;
         display: block;
         margin: 0 auto 4rem;
@@ -129,11 +131,12 @@
     }
 
     .technologies h4{
-        font-size: 1.8rem;
+        font-size: 2rem;
+        /* font-weight: 500; */
     }
     .changeColor{
         width: 80px;
-        margin-left: 30%;
+        margin-left: 35%;
     }
 
     .solidity{
@@ -142,19 +145,22 @@
     
 
     .technologies p{
-        font-size: 1.8rem;
+        margin-top: 2%;
+        font-size: 2.2rem;
         text-align: center;
         display: block;
+        margin-right: 4%;
     }
 
     .buttons{
-        margin-left:28%;
+        margin-left:24%;
         margin-bottom: 3%;
         margin-top: 4%;
     }
 
     .technologies button{
-        width:140px;
-        font-size: 1.2rem;
+        width:185px;
+        height: 70px;
+        font-size: 1.6rem;
     }
 }

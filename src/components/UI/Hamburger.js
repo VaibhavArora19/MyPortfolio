@@ -8,9 +8,9 @@ const Hamburger = (props) => {
     return <div>
     <div className= {classes.hamburger} onClick = {showNavbarHandler}>
     <div className="space-y-2">
-    <div className="w-8 h-0.5 bg-white"></div>
-    <div className="w-8 h-0.5 bg-white"></div>
-    <div className="w-8 h-0.5 bg-white"></div>
+    <div className="w-15 h-1.5 bg-white"></div>
+    <div className="w-15 h-1.5 bg-white"></div>
+    <div className="w-15 h-1.5 bg-white"></div>
     </div>
     </div>
     </div> 

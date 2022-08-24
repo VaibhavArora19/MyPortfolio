@@ -8,7 +8,7 @@ const Introduction = (props) => {
 
   if (!props.mobileView) {
     classStyle = {
-      fontSize: "2.2em",
+      fontSize: "2.3em",
       fontFamily: "acumin-pro, sans-serif",
       fontWeight: "700",
       fontStyle: "normal",
@@ -16,11 +16,10 @@ const Introduction = (props) => {
   } else {
     classStyle = {
       fontSize: "3.4em",
-      fontFamily: "acumin-pro, sans-serif",
-      fontWeight: "700",
-      fontStyle: "normal",
     };
   }
+
+
 
   return (
     <div className={classes.introduction} id="IntroductionId">
@@ -40,7 +39,7 @@ const Introduction = (props) => {
         style={
           classStyle
         }
-        wrapper={"h2"}
+        wrapper={"h1"}
         speed={45}
         repeat={Infinity}
       />

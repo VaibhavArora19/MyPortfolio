@@ -56,7 +56,7 @@ const Contact = () => {
         <img src={Message} alt="message-icon" />
         <div className={classes.form}>
           <form onSubmit={formSubmitHandler}>
-            <div className={`grid grid-cols-1 md:grid-cols-2`}>
+            <div className={`grid grid-cols md:grid-cols-2`}>
               <div>
                 <label className={classes.label}>FIRST NAME</label>
                 <input
