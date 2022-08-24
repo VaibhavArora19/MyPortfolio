@@ -45,3 +45,9 @@
         top:90%;
        } 
 }
+
+@media (max-width:375px) {
+    .top{
+        left:820px;
+    }
+}

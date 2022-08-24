@@ -164,3 +164,8 @@
         font-size: 1.6rem;
     }
 }
+@media (max-width:370px) {
+        .image{
+            width: 49rem;
+        }
+}
