@@ -35,7 +35,6 @@ const Navbar = (props) => {
           <div className={classes.button}>
             <a href="#ContactId">Hire me</a>
           </div>
-          <div></div>
         </div>
       </div>}
     </div>

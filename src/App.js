@@ -57,7 +57,7 @@ function App() {
    <Navbar showNavbar = {showNavbarHandler} showHamburger = {isHamburgerShowing}/>
    {isNavbarShowing && <HamburgerNavbar onClick = {hideNavbarOptions}/>}
    <Introduction  mobileView = {isHamburgerShowing}/>
-    {showBtn && <ToTop />}
+    {showBtn && !isHamburgerShowing && <ToTop />}
    <About />
    <Skills />
    <MyWork />
