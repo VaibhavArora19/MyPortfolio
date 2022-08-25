@@ -20,7 +20,7 @@ const Contact = () => {
     const email = emailRef.current.value;
     const message = messageRef.current.value;
 
-    const contactData = await fetch("http://localhost:8080/postContact", {
+    const contactData = await fetch("https://desolate-dusk-98073.herokuapp.com/postContact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
