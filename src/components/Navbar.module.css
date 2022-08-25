@@ -60,11 +60,12 @@
 
 @media (max-width:500px){
 .navbar{
-    margin: 4% 4%;
+    margin: 3% 4%;
+    
 }
 .title span{
     font-size: 4.3rem;
     margin-left: 30px;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 }

@@ -1,11 +1,14 @@
-import { useState } from 'react';
+
 import classes from './HamburgerNavbar.module.css';
 
-const HamburgerNavbar = () => {
+const HamburgerNavbar = (props) => {
+    const hideNavbarHandler = () => {
+        props.onClick();
+    };
 
   return (
-    <div className= {classes.options}>
-      <div>
+    <div className= {classes.options} onClick = {hideNavbarHandler}>
+    <div>
         <a href="#AboutId">About</a>
       </div>
       <div>

@@ -47,10 +47,15 @@ function App() {
   const showNavbarHandler = ()  => {
     setIsNavbarShowing(!isNavbarShowing);
   };
+
+  const hideNavbarOptions = () => {
+      setIsNavbarShowing(false);
+  };
+
   return (
    <div className= {classes}>
-   <Navbar showNavbar = {showNavbarHandler}/>
-   {isNavbarShowing && <HamburgerNavbar/>}
+   <Navbar showNavbar = {showNavbarHandler} showHamburger = {isHamburgerShowing}/>
+   {isNavbarShowing && <HamburgerNavbar onClick = {hideNavbarOptions}/>}
    <Introduction  mobileView = {isHamburgerShowing}/>
     {showBtn && <ToTop />}
    <About />

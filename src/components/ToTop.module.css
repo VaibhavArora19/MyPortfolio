@@ -30,9 +30,9 @@
     .top{
         width:110px;
         height: 110px;
-        left: 935px;
+        left: 955px;
         border-radius: 80px;
-        top:90%;
+        top:93%;
     }
     .top span{
         font-size: 4.4rem;
@@ -43,11 +43,13 @@
        .top{
         left:860px;
         top:90%;
+        position: fixed;
        } 
 }
 
 @media (max-width:375px) {
     .top{
         left:820px;
+        position: fixed;
     }
 }

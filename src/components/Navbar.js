@@ -1,10 +1,8 @@
-import { useState } from "react";
+
 import classes from "./Navbar.module.css";
 import Hamburger from "./UI/Hamburger";
 
 const Navbar = (props) => {
-  const [isMobileScreen, setIsMobileScreen] = useState(true);
-
 
   return (
     <div className={classes.navbar} id="NavbarId">
@@ -16,7 +14,7 @@ const Navbar = (props) => {
           <span>Vaibhav Arora</span>
         </h1>
       </div>
-      {isMobileScreen ? <Hamburger showOrHideNavbar = {props.showNavbar} /> :<div>
+      {props.showHamburger ? <Hamburger showOrHideNavbar = {props.showNavbar} /> :<div>
         <div className={classes.options}>
           <div>
             <a href="#NavbarId">Home</a>
