@@ -88,7 +88,7 @@ const MyWork = () => {
           </div>
           <p>Track 50+ cryptocurrency details in real time.</p>
           <div className={classes.buttons}>
-            <a href="https://crypto-market-19.herokuapp.com">
+            <a href="https://crypto-market.onrender.com">
               <button className="btn btn-active btn-ghost">
                 <i className="fa-solid fa-arrow-up-right-from-square"></i> Live
               </button>
