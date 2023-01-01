@@ -20,6 +20,9 @@ const HamburgerNavbar = (props) => {
       <div>
         <a href="#ContactId">Contact</a>
       </div>
+      <div>
+        <a href="https://linktr.ee/vaibhavarora19" target="_blank">Connect</a>
+      </div>
     </div>
   );
 };

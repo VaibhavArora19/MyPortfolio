@@ -31,6 +31,9 @@ const Navbar = (props) => {
           <div>
             <a href="#ContactId">Contact</a>
           </div>
+          <div>
+            <a href="https://linktr.ee/vaibhavarora19" target="_blank">Connect</a>
+          </div>
 
           <div className={classes.button}>
             <a href="#ContactId">Hire me</a>
