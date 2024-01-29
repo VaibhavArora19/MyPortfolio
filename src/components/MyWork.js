@@ -144,12 +144,12 @@ const MyWork = () => {
           </div>
           <p>Take your smart contracts cross chain.</p>
           <div className={classes.buttons}>
-            <a href="https://decentralized-to-do.vercel.app/">
+            <a href="https://explorerx.vercel.app/">
               <button className="btn btn-active btn-ghost">
                 <i className="fa-solid fa-arrow-up-right-from-square"></i> Live
               </button>
             </a>
-            <a href="https://github.com/VaibhavArora19/Decentralized-ToDo">
+            <a href="https://github.com/crossX-xyz/crossx-ccip">
               <button className="btn btn-active btn-ghost">
                 <i className="fa-brands fa-github"></i> Source
               </button>
