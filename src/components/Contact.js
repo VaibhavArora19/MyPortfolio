@@ -20,29 +20,30 @@ const Contact = () => {
     const email = emailRef.current.value;
     const message = messageRef.current.value;
 
-    const contactData = await fetch("https://portfolio-server-360g.onrender.com/postContact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        firstName,
-        lastName,
-        email,
-        message,
-      }),
-    });
-
-    
+    const contactData = await fetch(
+      "http://ec2-13-234-231-117.ap-south-1.compute.amazonaws.com/postContact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email,
+          message,
+        }),
+      }
+    );
 
     await contactData.json();
 
-      setIsSending(false);
+    setIsSending(false);
 
-      firstNameRef.current.value = '';
-      lastNameRef.current.value = '';
-      emailRef.current.value = '';
-      messageRef.current.value = '';
+    firstNameRef.current.value = "";
+    lastNameRef.current.value = "";
+    emailRef.current.value = "";
+    messageRef.current.value = "";
   };
 
   return (
@@ -86,7 +87,7 @@ const Contact = () => {
                   type="email"
                   placeholder="vitalik@gmail.com"
                   ref={emailRef}
-                  autoComplete = "on"
+                  autoComplete="on"
                   required
                 />
               </div>
