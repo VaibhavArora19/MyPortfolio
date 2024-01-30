@@ -4,6 +4,9 @@ import classes from "./Contact.module.css";
 
 import Message from "../images/Message.svg";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
   const [isSending, setIsSending] = useState(false);
   const firstNameRef = useRef();
@@ -24,6 +27,7 @@ const Contact = () => {
       "http://ec2-13-234-231-117.ap-south-1.compute.amazonaws.com/postContact",
       {
         method: "POST",
+        referrerPolicy: "unsafe-url",
         headers: {
           "Content-Type": "application/json",
         },
@@ -39,6 +43,7 @@ const Contact = () => {
     await contactData.json();
 
     setIsSending(false);
+    toast.success("Thanks for the message. I will get back to you soon :)");
 
     firstNameRef.current.value = "";
     lastNameRef.current.value = "";
@@ -109,6 +114,7 @@ const Contact = () => {
               <button className="btn btn-primary loading"></button>
             )}
           </form>
+          <ToastContainer position="bottom-right" />
         </div>
       </div>
     </div>
