@@ -24,10 +24,10 @@ const Contact = () => {
     const message = messageRef.current.value;
 
     const contactData = await fetch(
-      "http://ec2-13-234-231-117.ap-south-1.compute.amazonaws.com/postContact",
+      "https://portfolio-server-0ydm.onrender.com/postContact",
       {
         method: "POST",
-        referrerPolicy: "unsafe-url",
+        // referrerPolicy: "unsafe-url",
         headers: {
           "Content-Type": "application/json",
         },
